@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scroll spy in div</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=screen-width,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css" media="screen">
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<style>
+	body{
+		padding: 50px,50px,50px,50px;
+	}
+	#scroll-area{
+		position: relative;
+		overflow: auto;
+	}
+	#section1{
+		padding-top: 10px;
+		background-color:#1E88E5;
+	}
+	#section2 {padding-top:10px;color: #fff; background-color: #673ab7;}
+    #section3 {padding-top:10px;color: #fff; background-color: #ff9800;}
+    #section41 {padding-top:10px;color: #fff; background-color: #00bcd4;}
+    #section42 {padding-top:10px;color: #fff; background-color: #009688;}
+    #topic{
+    	background-color: #00bcd4;
+    }
+	</style>
+</head>
+<body>
+<div class="container-fluid" id="topic">
+	<h1>Policies</h1>
+	<p>jjhdkjahdkjasdksahdsakjdh jdbbajshdsakj khdjsuioouwq jhjPp  qjkhk cjkchkj bm wqjkwh	qiu hjksh xzjx jqwkiu jiyhiud jhuisd
+	hhshdhfas hjjgsdhs hjjgsdhsw 	wkuhiyad jkhjas jkgjkgadjs jsgdjgd jhgdjhsa xbcnmiuyiu	qhhjdgjadfdagdhasfh nbnmbcnxc jkwhqu iibdasbdbashk jhdkjahdkjashd jhgkascgka.
+	</p>
+</div>
+<nav id="nb" class="navbar navbar-inverse">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+				<span class="sr-only">Toggle Navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a href="#" class="navbar-brand">Company Website</a>
+		</div>
+		<div id="mynavbar" class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li><a href="#section1">Section 1</a></li>
+				<li><a href="#section2">Section 2</a></li>
+				<li><a href="#section3">Section 3</a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Section 4<b class=
+					"caret"></b></a>
+						<ul role="menu" class="dropdown-menu">
+							<li><a href="#section41">Section 4.1</a></li>
+							<li class="divider"></li>
+							<li><a href="#section42">Section 4.2</a></li>
+						</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<div id="scroll-area" class="container-fluid" data-spy="scroll" data-target="#nb" data-offset="0">
+	<div id="section1" class="container-fluid">
+		<h2>Section 1</h2>
+		<p>hjjgdfsgdfjhgfjf hdfg\gf\d hdgsjg\gsdhj jwheiuqbdnasb hgdjgdha hgsajgasgdhj
+		hsdgajhgdajhgdjdjakdhj ahgjhgdjh hagdjgdha hjjgsadjagduwyhiud hsgdsagdhsgd hgdasjdgahg
+		bdjgdjagdagdhgdaj hagdshgdjasg hagdjgdja hjgsadgasjd hjgadjgsadj hgjgdjh</p>
+	</div>
+	<div id="section2" class="container-fluid">
+		<h2>Section 1</h2>
+		<p>hjjgdfsgdfjhgfjf hdfg\gf\d hdgsjg\gsdhj jwheiuqbdnasb hgdjgdha hgsajgasgdhj
+		hsdgajhgdajhgdjdjakdhj ahgjhgdjh hagdjgdha hjjgsadjagduwyhiud hsgdsagdhsgd hgdasjdgahg
+		bdjgdjagdagdhgdaj hagdshgdjasg hagdjgdja hjgsadgasjd hjgadjgsadj hgjgdjh</p>
+	</div>
+	<div id="section3" class="container-fluid">
+		<h2>Section 1</h2>
+		<p>hjjgdfsgdfjhgfjf hdfg\gf\d hdgsjg\gsdhj jwheiuqbdnasb hgdjgdha hgsajgasgdhj
+		hsdgajhgdajhgdjdjakdhj ahgjhgdjh hagdjgdha hjjgsadjagduwyhiud hsgdsagdhsgd hgdasjdgahg
+		bdjgdjagdagdhgdaj hagdshgdjasg hagdjgdja hjgsadgasjd hjgadjgsadj hgjgdjh</p>
+	</div>
+	<div id="section41" class="container-fluid">
+		<h2>Section 1</h2>
+		<p>hjjgdfsgdfjhgfjf hdfg\gf\d hdgsjg\gsdhj jwheiuqbdnasb hgdjgdha hgsajgasgdhj
+		hsdgajhgdajhgdjdjakdhj ahgjhgdjh hagdjgdha hjjgsadjagduwyhiud hsgdsagdhsgd hgdasjdgahg
+		bdjgdjagdagdhgdaj hagdshgdjasg hagdjgdja hjgsadgasjd hjgadjgsadj hgjgdjh</p>
+	</div>
+	<div id="section42" class="container-fluid">
+		<h2>Section 1</h2>
+		<p>hjjgdfsgdfjhgfjf hdfg\gf\d hdgsjg\gsdhj jwheiuqbdnasb hgdjgdha hgsajgasgdhj
+		hsdgajhgdajhgdjdjakdhj ahgjhgdjh hagdjgdha hjjgsadjagduwyhiud hsgdsagdhsgd hgdasjdgahg
+		bdjgdjagdagdhgdaj hagdshgdjasg hagdjgdja hjgsadgasjd hjgadjgsadj hgjgdjh</p>
+	</div>
+</div>
+</body>
+</html>
